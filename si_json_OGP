@@ -5,8 +5,8 @@
     "fr": "Répertoire de services"
   },
   "notes": {
-    "en": "Access, upload and modify the Service Inventory of external and internal enterprise services for your organization",
-    "fr": "Accèder, téléverser et modifier le catalogue des service internes intégrés et externes pour votre organisation"
+    "en": "Access the Service Inventory of external and internal enterprise services for the Government of Canada",
+    "fr": "Accèder le catalogue des service internes intégrés et externes pour le Gouvernment du Canada"
   },
   "resources": [
     {
@@ -30,19 +30,15 @@
             "fr": "Indique l’exercice pour lequel les données sur les services sont déclarées.",
             "en": "Identifies the fiscal year for which service data is reported"
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
           "datastore_type": "text",
           "choices": {
-            "2013-2014": "2013-2014",
-            "2014-2015": "2014-2015",
-            "2015-2016": "2015-2016",
-            "2016-2017": "2016-2017",
-            "2017-2018": "2017-2018",
-            "2018-2019": "2018-2019"
+            "2019-2020",
+            "2018-2019",
+            "2017-2018",
+            "2016-2017",
+            "2015-2016",
+            "2014-2015",
+            "2013-2014"
           }
         },
         {
