@@ -878,52 +878,64 @@
           "datastore_type": "text"
         }
      ],
-      #"example_record": {
-        "fiscal_yr": "2017-2018",
-        "service_id": "4",
-        "service_name_en": "Partner views",
-        "service_name_fr": "Opinions des partenaires",
-        "external_internal": "EX",
-        "service_type": "RES",
-        "special_designations": "1",
-        "service_description_en": "Provides matching contributions to producers who make annual deposits to an AgriInvest account, to help manage income declines or make investments to mitigate risks or improve market income.",
-        "service_description_fr": "Offre des contributions de contrepartie aux producteurs qui font des dépôts annuels dans un compte Agri-investissement, afin de gérer les baisses de revenus ou de faire des investissements dans le but d'atténuer les risques ou d'améliorer les revenus tirés du marché.",
-        "authority_en": "Farm Income Protection Act",
-        "authority_fr": "Loi sur la protection du revenu agricole",
-        "service_url_en": "http://www.agr.gc.ca/eng/?id=1291828779399",
-        "service_url_fr": "http://www.agr.gc.ca/fra/?id=1291828779399",
-        "program_name_en": "AgriInvest",
-        "program_name_fr": "Agri-investissement",
-        "program_id_code": "03-001-BWP02",
-        "client_target_groups": [
-          "PP",
-          "IO"
+      "example_record": {
+        "fiscal_yr": "2019-2020",
+        "service_id": "1003",
+        "service_name_en": "Employment Insurance (EI) Benefits",
+        "service_name_fr": "Prestations d’assurance-emploi",
+        "department_name_en" : "Employment and Social Development Canada",
+        "department_name_fr" : "Emploi et Développement social Canada",
+        "external_internal": "extern",
+        "service_type": "res",
+        "special_designations": [
+          "essent",
+          "prior"
         ],
-        "service_fee": "Y",
+        "service_description_en": "EI provides temporary financial assistance to unemployed Canadians who have lost their job through no fault of their own, while they look for work or upgrade their skills. Canadians who are sick, pregnant, or caring for a newborn or adopted child, as well as those who must care for a family member who is seriously ill with a significant risk of death or who must provide care or support to their critically ill or injured child  family member may also be assisted by EI. The program also allows for self-employed individuals to register into it for access to EI special benefits (sickness, maternity, parental, compassionate care and parents of critically ill children family caregiver benefits).",
+        "service_description_fr": "L’assurance-emploi procure une aide financière temporaire aux Canadiens au chômage qui ont perdu leur emploi pour des raisons indépendantes de leur volonté, pendant qu’ils cherchent du travail ou améliorent leurs compétences. L’assurance-emploi vient également en aide aux travailleurs malades, aux femmes enceintes, aux parents qui s’occupent d’un nouveau-né ou d’un enfant adopté, aux personnes qui doivent s’occuper d’un membre de leur famille souffrant d’une maladie grave qui risque de causer son décès ainsi qu’aux parents qui doivent fournir des soins ou du soutien à leur enfant gravement malade ou blessé. Le programme permet également aux travailleurs indépendants de s'y inscrire pour avoir droit aux prestations spéciales de l'assurance-emploi (prestations de maternité, parentales, de compassion et celles destinées aux parents d’enfants gravement malades).",
+        "service_url_en": "https://www.canada.ca/en/services/benefits/ei.html",
+        "service_url_fr": "https://www.canada.ca/en/services/benefits/ei.html",
+        "program_name_en": "Employment Insurance",  
+        "program_name_fr": "Assurance-emploi",
+        "last_GBA": "2019-2020",
+        "ident_platform": "ex_auth",
+        "client_target_groups": [
+          "econom",
+          "person"
+        ],
+        "info_service": "N",
+        "service_fee": "N",
         "cra_business_number": "Y",
-        "use_of_sin": "NA",
-        "online_applications": "108429",
-        "web_visits_info_service": "51800",
-        "calls_received": "701",
-        "in_person_applications": "NA",
-        "email_applications": "ND",
-        "fax_applications": "ND",
-        "postal_mail_applications": "15277",
+        "use_of_sin": "Y",
+        "service_channels" : [
+          "eml",
+          "onl",
+          "oth",
+          "person",
+          "post",
+          "tel"
+        ],
+        "calls_received": "36653828",
+        "web_visits_info_service": "52252154",
+        "online_applications": "4832440",
+        "telephone_applications": "0",
+        "in_person_applications": "0",
+        "postal_mail_applications": "41270",
+        "other_applications": "0",
         "e_registration": "Y",
         "e_authentication": "Y",
         "e_application": "Y",
-        "e_decision": "N",
+        "e_decision": "Y",
         "e_issuance": "Y",
-        "e_feedback": "Y",
+        "e_feedback": "N",
         "client_feedback": [
-          "ONL",
-          "POST"
+          "eml",
+          "onl",
+          "person",
+          "tel"
         ],
-        "special_remarks_en": "The value for in-person applications is \"NA\" as applications are not submitted in-person. The values for some channels are listed as “ND” as the department does not have data available. ",
-        "special_remarks_fr": "Les application_en_personne est sans object (\"NA\") parce que le service n’est pas offert en personne. Aucune donnée n’est disponible pour plusieurs canals",
-        "harmonized_service_id": "aafc-aac-01",
-        "harmonized_service_name_en": "Farm Debt Mediation Service",
-        "harmonized_service_name_fr": "Service de médiation en matière d'endettement agricole"
+        "special_remarks_en": "Application volumes reported represent both initial and renewal EI applications.",
+        "special_remarks_fr": "Le nombre de demandes indiqué représente les demandes initiales et les demandes de renouvellement d’assurance-emploi."
       }
     },
     {
