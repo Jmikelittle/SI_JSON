@@ -136,7 +136,7 @@
             "en": "Service Type"
           },
           "description": {
-            "fr": "Indique le type de service externe ou interne.",
+            "fr": "Indique le type de service externe ou interne comme souligné par la Ligne directrice sur la gestion des services.",
             "en": "Identifies the external or internal service type as outlined in the Guideline on Service Management."
           },
           "datastore_type": "text",
@@ -248,7 +248,7 @@
             "en": "Service Description (English)"
           },
           "description": {
-            "fr": "Offre une brève description du service.",
+            "fr": "Offre une brève description du service, en langage simple.",
             "en": "Provides a brief description of the service, in plain language."
           },
           "datastore_type": "text"
@@ -260,7 +260,7 @@
             "en": "Service Description (French)"
           },
           "description": {
-            "fr": "Offre une brève description du service.",
+            "fr": "Offre une brève description du service, en langage simple.",
             "en": "Provides a brief description of the service, in plain language."
           },
           "datastore_type": "text"
@@ -368,8 +368,8 @@
             "en": "Other",
             "fr": "Autre"
           }
-        },
-      }
+        }
+      },
         {
           "id": "client_target_groups",
           "label": {
@@ -377,8 +377,8 @@
             "en": "Client/Target Groups"
           },
           "description": {
-            "fr": "Identifie les clients ou les groupes de services cibles. Remarque : Pour obtenir d’autres éclaircissements relativement à ces catégories, veuillez consulter la Norme sur l’étiquetage prévue dans la Politique sur les résultats.",
-            "en": "Identifies the clients or target groups of the service.  Note: Should you require further clarification with regard to these categories, please consult the Standard on Tagging, in the Policy on Results."
+            "fr": "Identifie les clients ou les groupes de services cibles.",
+            "en": "Identifies the clients or target groups of the service."
           },
           "datastore_type": "text",
           "choices": {
@@ -471,7 +471,7 @@
             "en": "Use of CRA Business Number"
           },
           "description": {
-            "fr": "Identifie si le numéro d'entreprise de l'Agence du Revenu du Canada est utilisé dans la prestation du service, si le service est livré à une entreprise.",
+            "fr": "Identifie si le numéro d'entreprise de l'Agence du Revenu du Canada est utilisé dans la prestation du service si le service est livré à une entreprise.",
             "en": "Identifies whether the Canada Revenue Agency's Business Number is used in the delivery of the service if the service is delivered to a business."
           },
           "datastore_type": "text",
@@ -569,8 +569,8 @@
         {
           "id": "calls_received",
           "label": {
-            "fr": "Nombre d’appels téléphoniques reçus",
-            "en": "Number of Telephone Calls Received"
+            "fr": "Nombre des demandes téléphoniques reçus",
+            "en": "Number of Telephone Enquiries Received"
           },
           "description": {
             "fr": "Indique le nombre de demandes reçues au cours d’un exercice pour chacun des modes de prestation suivants.",
@@ -815,7 +815,7 @@
           },
           "description": {
             "fr": "Détermine quels canaux, s’il y a lieu, offrent aux utilisateurs d’un service l’occasion de donner une rétroaction sur leur niveau de satisfaction à l’égard du service.",
-            "en": "Identifies which channels, if any, provide users of a service an opportunity to provide feedback on their level of satisfaction with the service. Select all that apply."
+            "en": "Identifies which channels, if any, provide users of a service an opportunity to provide feedback on their level of satisfaction with the service."
           },
           "datastore_type": "text",
           "choices": {
@@ -863,7 +863,6 @@
             "fr": "Fournit de l’espace supplémentaire pour les commentaires relatifs aux renseignements sur les volumes. Veuillez vous reporter au code d’identification de la zone, s’il y a lieu. Pour les commentaires relatifs à d’autres zones, les ministères peuvent publier une note explicative sur leur site Web suivi d’un lien vers l’ensemble de données du Répertoire des services du GC.",
             "en": "Provides additional space for comments related to volumetrics information. Please refer to associated Field ID, where applicable. For comments related to other fields, departments can create and publish an explanatory note on their website with a link to the GC Service Inventory dataset."
           },
-          "obligation": "optional",
           "datastore_type": "text"
         },
         {
@@ -876,23 +875,9 @@
             "fr": "Fournit de l’espace supplémentaire pour les commentaires relatifs aux renseignements sur les volumes. Veuillez vous reporter au code d’identification de la zone, s’il y a lieu. Pour les commentaires relatifs à d’autres zones, les ministères peuvent publier une note explicative sur leur site Web suivi d’un lien vers l’ensemble de données du Répertoire des services du GC.",
             "en": "Provides additional space for comments related to volumetrics information. Please refer to associated Field ID, where applicable. For comments related to other fields, departments can create and publish an explanatory note on their website with a link to the GC Service Inventory dataset."
           },
-          "obligation": "optional",
-          "datastore_type": "text"
-        },
-        {
-          "id": "harmonized_service_id",
-          "label": {
-            "fr": "Désignation du service harmonisé",
-            "en": "Harmonized Service ID"
-          },
-          "description": {
-            "fr": "Celle désignation du service a été créé pour faire correspondre dues services uniques sur plusieurs années et créer un format standard pour tous les services de l'inventaire. Cela relie les services à leurs norms relatives aux services.",
-            "en": "This service ID was created to match up unique services over multiple years, and create a standard format amoung all services in the inventory. This links services to their service standards."
-          },
-          "obligation": "optional",
           "datastore_type": "text"
         }
-      ],
+     ],
       #"example_record": {
         "fiscal_yr": "2017-2018",
         "service_id": "4",
@@ -982,14 +967,33 @@
             "en": "Service ID Number"
           },
           "description": {
-            "fr": "Le numéro unique attribué par le ministère ou l’organisme à un service dans le répertoire afin de faciliter le référencement à des services précis.",
-            "en": "The unique number assigned by the department to a service in the inventory to make it easier to refer to specific services."
+            "fr": "Le numéro unique attribué à un service dans le répertoire afin de faciliter le référencement à des services précis.",
+            "en": "The unique number assigned to a service in the inventory to make it easier to refer to specific services."
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
+          "datastore_type": "text"
+        },
+        {
+          "id": "service_name_en",
+          "label": {
+            "fr": "Nom du service (en anglais)",
+            "en": "Service Name (English)"
           },
-          "obligation": "mandatory",
+          "description": {
+            "fr": "Indique le nom officiel du service.",
+            "en": "Identifies the official name of the service."
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "service_name_fr",
+          "label": {
+            "fr": "Nom du service (en français)",
+            "en": "Service Name (French)"
+          },
+          "description": {
+            "fr": "Indique le nom officiel du service.",
+            "en": "Identifies the official name of the service."
+          },
           "datastore_type": "text"
         },
         {
@@ -999,14 +1003,9 @@
             "en": "Service Standard ID"
           },
           "description": {
-            "fr": "Indique le numéro unique attribué par le ministère à chaque norme relative aux services pour ce service. Facilite le référencement, car un service peut avoir de multiples normes.",
-            "en": "Identifies the unique number assigned by the department to each service standard for that service. Makes it easier for reference purposes as one service may have multiple standards."
+            "fr": "Indique le numéro unique attribué à chaque norme relative aux services pour ce service. Facilite le référencement, car un service peut avoir de multiples normes.",
+            "en": "Identifies the unique number assigned to each service standard for that service. Makes it easier for reference purposes as one service may have multiple standards."
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
           "datastore_type": "text"
         },
         {
@@ -1019,11 +1018,6 @@
             "fr": "Indique la norme relative aux services ayant trait à un service en particulier. Voir la Ligne directrice sur la gestion des services afin de connaître le format à utiliser pour définir les normes relatives aux services.",
             "en": "Identifies the service standard related to a particular service. See Guideline on Service Management for format to be used when defining service standards."
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
           "datastore_type": "text"
         },
         {
@@ -1036,12 +1030,7 @@
             "fr": "Indique la norme relative aux services ayant trait à un service en particulier. Voir la Ligne directrice sur la gestion des services afin de connaître le format à utiliser pour définir les normes relatives aux services.",
             "en": "Identifies the service standard related to a particular service. See Guideline on Service Management for format to be used when defining service standards."
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
-          "datastore_type": "text"
+         "datastore_type": "text"
         },
         {
           "id": "service_std_url_en",
@@ -1053,11 +1042,6 @@
             "fr": "Indique la page Web ministérielle (Canada.ca) où les normes relatives aux services et les cibles sont publiées.",
             "en": "Identifies the departmental webpage (Canada.ca) where the service standards and targets are published."
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
           "datastore_type": "text"
         },
         {
@@ -1070,11 +1054,6 @@
             "fr": "Indique la page Web ministérielle (Canada.ca) où les normes relatives aux services et les cibles sont publiées.",
             "en": "Identifies the departmental webpage (Canada.ca) where the service standards and targets are published."
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
           "datastore_type": "text"
         },
         {
@@ -1087,28 +1066,45 @@
             "fr": "Indique le type de norme relative aux services défini dans la Ligne directrice sur la gestion des services.",
             "en": "Identifies the type of service standard as defined in the Guideline on Service Management."
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
-          "datastore_type": "_text",
+          "datastore_type": "text",
           "choices": {
-            "ACS": {
-              "fr": "Exactitude",
+            "acess": {
+              "fr": "Accès à l’information",
               "en": "Access"
             },
-            "ACY": {
-              "fr": "Temps opportun",
+            "accur": {
+              "fr": "Exactitude",
               "en": "Accuracy"
             },
-            "OTH": {
+            "oth": {
               "fr": "Autre",
               "en": "Other"
             },
-            "TML": {
-              "fr": "Accès à l’information",
+            "time": {
+              "fr": "Temps opportun",
               "en": "Timeliness"
+            }
+          }
+        },
+        {
+          "id": "target_type",
+          "label": {
+            "fr": "Type de cible",
+            "en": "Target Type"
+          },
+          "description": {
+            "fr": "Identifie le type de cible de la norme de service.",
+            "en": "Identifies the type of service standard target."
+          },
+          "datastore_type": "text",
+          "choices": {
+            "percentage": {
+              "fr": "Pourcentage des résultats",
+              "en": "Percentage of outcomes"
+            },
+            "other_type": {
+              "fr": "Autre type de cible",
+              "en": "Other type of target"
             }
           }
         },
@@ -1119,10 +1115,45 @@
             "en": "Service Standard Target"
           },
           "description": {
-            "fr": "Indique la valeur en décimal entre zéro et un de la cible de la norme de service.",
-            "en": "Identifies the decimal value between zero and one of the service standard target."
+            "fr": "Indique la valeur entre zéro et cent de la cible de la norme de service.",
+            "en": "Identifies the value between zero and one hundred of the service standard target."
           },
-          "obligation": "optional",
+          "datastore_type": "numeric"
+        },
+        {
+          "id": "volume_meeting_target",
+          "label": {
+            "fr": "Volume d’activités qui respectent la cible de la norme relative aux services",
+            "en": "Business Volume That Met Service Standard Target"
+          },
+          "description": {
+            "fr": "Indique le nombre d’opérations de service effectuées (p. ex. les appels auxquels on a répondu, les paiements émis, les demandes traitées, etc.) au cours de l’exercice qui ont respecté une norme relative aux services particulière à un service.",
+            "en": "Identifies the number of final outputs issued appropriate to the service (eg. payments issued, requests completed, etc) during the fiscal year that met a particular service standard target for a service."
+          },
+          "datastore_type": "numeric"
+        },
+        {
+          "id": "total_volume",
+          "label": {
+            "fr": "Volumes totaux",
+            "en": "Total Volume"
+          },
+          "description": {
+            "fr": "Indique le nombre total d’opérations de service effectuées (p. ex. les appels auxquels on a répondu, les paiements émis, les demandes traitées) relativement à un service au cours de l’exercice.",
+            "en": "Identifies the total number of final outputs issued appropriate to the service (eg. payments issued, requests completed, etc) during the fiscal year."
+          },
+          "datastore_type": "numeric"
+        },
+        {
+          "id": "performance",
+          "label": {
+            "fr": "Performance",
+            "en": "Performance"
+          },
+          "description": {
+            "fr": "Identifie les résultats atteints pour cette norme de service. Il s’agit du volume_meeting_target divisé par le total_volume",
+            "en": "Identifies the result achieved for this service standard. This is the volume_meeting_target divided by the total_volume"
+          },
           "datastore_type": "numeric"
         },
         {
@@ -1135,12 +1166,7 @@
             "fr": "Indique l’exercice au cours duquel la norme relative aux services a été examinée pour la dernière fois à l’aide de l’outil d’évaluation des normes relatives aux services du GC accessible sur la page GCpédia de la Politique sur les services du GC. (http://www.gcpedia.gc.ca/wiki/GC_Service_Policy_Agenda#Guidance)",
             "en": "Identifies the fiscal year in which the service standard was last reviewed using the GC Service Standard Assessment Tool available on the GC Service Policy GCPedia page. ( http://www.gcpedia.gc.ca/wiki/GC_Service_Policy_Agenda#Guidance )"
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
-          "datastore_type": "text",
+         "datastore_type": "text",
           "choices": {
             "2013-2014": "2013-2014",
             "2014-2015": "2014-2015",
@@ -1154,20 +1180,109 @@
           }
         },
         {
+          "id": "channel",
+          "label": {
+            "fr": "Mode de prestation de la norme de service",
+            "en": "Service Standard Channel"
+          },
+          "description": {
+            "fr": "Identifie à quelle mode de prestation de service la norme de service est appliquée",
+            "en": "Identifies the service channel to which the service standard applies"
+          },
+          "datastore_type": "text",
+          "choices": {
+            "eml": {
+              "fr": "Courriel",
+              "en": "Email"
+            },
+            "fax": {
+              "fr": "Télécopieur",
+              "en": "Fax"
+            },
+            "person": {
+              "fr": "En personne",
+              "en": "In-Person"
+            },
+            "non": {
+              "fr": "Aucune des réponses",
+              "en": "None"
+            },
+            "onl": {
+              "fr": "En ligne",
+              "en": "Online"
+            },
+            "post": {
+              "fr": "Courrier postal",
+              "en": "Postal Mail"
+            },
+            "tel": {
+              "fr": "Téléphone",
+              "en": "Telephone"
+            },
+            "oth":{
+              "en": "Other",
+              "fr": "Autre"
+            }
+          }
+        },
+        {
+          "id": "standard_channel_comment_en",
+          "label": {
+            "fr": "Commentaires sur le mode de prestation de la norme de service (anglais)",
+            "en": "Comments on the service standard channel (English)"
+          },
+          "description": {
+            "fr": "Commentaires en lien au mode de prestation de la norme de service",
+            "en": "Commentaires sur le mode de prestation de la norme de service (anglais)"
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "standard_channel_comment_fr",
+          "label": {
+            "fr": "Commentaires sur le mode de prestation de la norme de service (Francais)",
+            "en": "Comments on the service standard channel (French)"
+          },
+          "description": {
+            "fr": "Commentaires en lien au mode de prestation de la norme de service",
+            "en": "Comments related to the service standard channel"
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "standard_comment_en",
+          "label": {
+            "fr": "Commentaires sur la norme de service en general (anglais)",
+            "en": "Comments on the service standard in general (English)"
+          },
+          "description": {
+            "fr": "Commentaires en lien à la norme de service en general",
+            "en": "Comments related to the service standard in general"
+          },
+          "datastore_type": "text"
+        },
+        {
+          "id": "standard_comment_fr",
+          "label": {
+            "fr": "Commentaires sur la norme de service en general (Francais)",
+            "en": "Comments on the service standard in general (French)"
+          },
+          "description": {
+            "fr": "Commentaires en lien à la norme de service en general",
+            "en": "Comments related to the service standard in general"
+          },
+          "datastore_type": "text"
+        },
+        {
           "id": "realtime_result_url_en",
           "label": {
             "fr": "URL aux résultats de rendement en temps réel (anglais)",
             "en": "URL to Real-Time Performance Results (English)"
           },
           "description": {
-            "fr": "Si aucune donnée n’est disponible, veuillez indiquer qu’il n’y a aucune donnée (« ND »).",
-            "en": "Identifies the departmental webpage where the real-time performance results for a service are published. • If data is not available, please indicate that there is no data (“ND”)."
+            "fr": "Identifie la site Web du service sur laquelle les résultats de performance en temps réel d'un service sont publiés",
+            "en": "Identifies the departmental webpage where the real-time performance results for a service are published."
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
           "datastore_type": "text"
         },
         {
@@ -1177,163 +1292,9 @@
             "en": "URL to Real-Time Performance Results (French)"
           },
           "description": {
-            "fr": "Si aucune donnée n’est disponible, veuillez indiquer qu’il n’y a aucune donnée (« ND »).",
-            "en": "Identifies the departmental webpage where the real-time performance results for a service are published.\n• If data is not available, please indicate that there is no data (“ND”).\n"
+            "fr": "Identifie la site Web du service sur laquelle les résultats de performance en temps réel d'un service sont publiés",
+            "en": "Identifies the departmental webpage where the real-time performance results for a service are published."
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
-          "datastore_type": "text"
-        },
-        {
-          "id": "q1_performance_result",
-          "label": {
-            "fr": "Q1 Volume d’activités qui respectent la cible de la norme relative aux services",
-            "en": "Q1 Business Volume That Met Service Standard Target"
-          },
-          "description": {
-            "fr": "Indique le nombre d’opérations de service effectuées (p. ex. les appels auxquels on a répondu, les paiements émis, les demandes traitées, etc.) au cours du premier trimestre de l’exercice qui ont respecté une norme relative aux services particulière à un service. (Q1 : du 1er avril au 30 juin)\n• Si aucune donnée n’est disponible, veuillez indiquer qu’il n’y a aucune donnée (« ND »).\n",
-            "en": "Identifies the number of final outputs issued appropriate to the service (eg. payments issued, requests completed, etc) during the first quarter of the fiscal year that met a particular service standard target for a service. (Q1: April 1- June 30)\n• If data is not available, please indicate that there is no data (“ND”).\n"
-          },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
-          "datastore_type": "text"
-        },
-        {
-          "id": "q1_business_volume",
-          "label": {
-            "fr": "Q1 Volumes des activités totaux",
-            "en": "Q1 Total Business Volume"
-          },
-          "description": {
-            "fr": "Indique le nombre total d’opérations de service effectuées (p. ex. les appels auxquels on a répondu, les paiements émis, les demandes traitées) relativement à un service au cours du premier trimestre de l’exercice. (Q1 : du 1er avril au 30 juin)\n• Si aucune donnée n’est disponible, veuillez indiquer qu’il n’y a aucune donnée (« ND »).\n",
-            "en": "Identifies the total number of final outputs issued appropriate to the service (eg. payments issued, requests completed, etc) during the first quarter of the fiscal year. (Q1: April 1- June 30)\n• If data is not available, please indicate that there is no data (ND).\n"
-          },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
-          "datastore_type": "text"
-        },
-        {
-          "id": "q2_performance_result",
-          "label": {
-            "fr": "Q2 Volume d’activités qui respectent la cible de la norme relative aux services",
-            "en": "Q2 Business Volume That Met Service Standard Target"
-          },
-          "description": {
-            "fr": "Indique le nombre d’opérations de service effectuées (p. ex. les appels auxquels on a répondu, les paiements émis, les demandes traitées, etc.) au cours du premier trimestre de l’exercice qui ont respecté une norme relative aux services particulière à un service. (Q2 : 1er juillet au 30 septembre)\n• Si aucune donnée n’est disponible, veuillez indiquer qu’il n’y a aucune donnée (« ND »).\n",
-            "en": "Identifies the number of final outputs issued appropriate to the service (eg. payments issued, requests completed, etc) processed during the second quarter of the fiscal year that met a particular service standard target for a service. (Q2: July 1 – September 30)\n• If data is not available, please indicate that there is no data (ND).\n"
-          },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
-          "datastore_type": "text"
-        },
-        {
-          "id": "q2_business_volume",
-          "label": {
-            "fr": "Q2 Volumes des activités totaux",
-            "en": "Q2 Total Business Volume"
-          },
-          "description": {
-            "fr": "Indique le nombre total d’opérations de service effectuées (p. ex. les appels auxquels on a répondu, les paiements émis, les demandes traitées) relativement à un service au cours du deuxième trimestre de l’exercice. (Q2 : 1er juillet au 30 septembre)\n• Si aucune donnée n’est disponible, veuillez indiquer qu’il n’y a aucune donnée (« ND »).\n",
-            "en": "Identifies the total number of final outputs issued appropriate to the service (eg. payments issued, requests completed, etc) during the second quarter of the fiscal year. (Q2: July 1 – September 30)\n• If data is not available, please indicate that there is no data (ND).\n"
-          },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
-          "datastore_type": "text"
-        },
-        {
-          "id": "q3_performance_result",
-          "label": {
-            "fr": "Q3 Volume d’activités qui respectent la cible de la norme relative aux services",
-            "en": "Q3 Business Volume That Met Service Standard Target"
-          },
-          "description": {
-            "fr": "Indique le nombre d’opérations de service effectuées (p. ex. les appels auxquels on a répondu, les paiements émis, les demandes traitées, etc.) au cours du troisième trimestre de l’exercice qui ont respecté une norme relative aux services particulière à un service. (Q3 : du 1er octobre au 31 décembre)\n• Si aucune donnée n’est disponible, veuillez indiquer qu’il n’y a aucune donnée (« ND »).\n",
-            "en": "Identifies the number of final outputs issued appropriate to the service (eg. payments issued, requests completed, etc) during the third quarter of the fiscal year that met a particular service standard target for a service. (Q3: October 1 – December 31)\n• If data is not available, please indicate that there is no data (ND).\n"
-          },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
-          "datastore_type": "text"
-        },
-        {
-          "id": "q3_business_volume",
-          "label": {
-            "fr": "Q3 Volumes des activités totaux",
-            "en": "Q3 Total Business Volume"
-          },
-          "description": {
-            "fr": "Indique le nombre total d’opérations de service effectuées (p. ex. les appels auxquels on a répondu, les paiements émis, les demandes traitées) relativement à un service au cours du troisième trimestre de l’exercice. (Q3: du 1er octobre au 31 décembre)\n• Si aucune donnée n’est disponible, veuillez indiquer qu’il n’y a aucune donnée (« ND »).\n",
-            "en": "Identifies the total number of final outputs issued appropriate to the service (eg. payments issued, requests completed, etc) during the third quarter of the fiscal year. (Q3: October 1 – December 31)\n• If data is not available, please indicate that there is no data (“ND”).\n"
-          },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
-          "datastore_type": "text"
-        },
-        {
-          "id": "q4_performance_result",
-          "label": {
-            "fr": "Q4 Volume d’activités qui respectent la cible de la norme relative aux services",
-            "en": "Q4 Business Volume That Met Service Standard Target"
-          },
-          "description": {
-            "fr": "Indique le nombre d’opérations de service effectuées (p. ex. les appels auxquels on a répondu, les paiements émis, les demandes traitées, etc.) au cours du quatrième trimestre de l’exercice qui ont respecté une norme relative aux services particulière à un service. (Q4: du 1er janvier au 31 mars)\n• Si aucune donnée n’est disponible, veuillez indiquer qu’il n’y a aucune donnée (« AD »).\n",
-            "en": "Identifies the number of final outputs issued appropriate to the service (eg. payments issued, requests completed, etc) during the fourth quarter of the fiscal year that met a particular service standard target for a service. (Q4: January 1 – March 31)\n• If data is not available, please indicate that there is no data (“ND”).\n"
-          },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
-          "datastore_type": "text"
-        },
-        {
-          "id": "q4_business_volume",
-          "label": {
-            "fr": "Q4 Volumes des activités totaux",
-            "en": "Q4 Total Business Volume"
-          },
-          "description": {
-            "fr": "Indique le nombre total d’opérations de service effectuées (p. ex. les appels auxquels on a répondu, les paiements émis, les demandes traitées) relativement à un service au cours du quatrième trimestre de l’exercice. (Q4: du 1er janvier au 31 mars)\nSi aucune donnée n’est disponible, veuillez indiquer qu’il n’y a aucune donnée (« ND »).\n",
-            "en": "Identifies the total number of final outputs issued appropriate to the service (eg. payments issued, requests completed, etc) during the fourth quarter of the fiscal year. (Q4: du 1er janvier au 31 mars)\n• If data is not available, please indicate that there is no data (ND).\n"
-          },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
-          "datastore_type": "text"
-        },
-        {
-          "id": "harmonized_service_id",
-          "label": {
-            "fr": "Désignation du service harmonisé",
-            "en": "Harmonized Service ID"
-          },
-          "description": {
-            "fr": "Celle désignation du service a été créé pour faire correspondre dues services uniques sur plusieurs années et créer un format standard pour tous les services de l'inventaire. Cela relie les services à leurs norms relatives aux services.",
-            "en": "This service ID was created to match up unique services over multiple years, and create a standard format amoung all services in the inventory. This links services to their service standards."
-          },
-          "obligation": "optional",
           "datastore_type": "text"
         }
       ],
