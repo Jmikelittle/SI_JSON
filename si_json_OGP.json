@@ -622,7 +622,7 @@
           },
           "description": {
             "fr": "Indique le nombre de demandes reçues au cours d’un exercice pour chacun des modes de prestation suivants.",
-            "en": "Identifies the number of applications received in-person in a fiscal year for the service."
+            "evvn": "Identifies the number of applications received in-person in a fiscal year for the service."
           },
           "datastore_type": "text"
         },
@@ -661,11 +661,6 @@
             "fr": "Indique si un service est de nature électronique selon les principaux points d’interaction avec les clients et leur application à ce service en particulier.\n\nRemarque : Pour plus de renseignements sur chaque point d’interaction, veuillez consulter la Ligne directrice sur la gestion de service.\n",
             "en": "Identifies whether a service is e-enabled based on key client interaction points, as applicable to the specific service. In the spirit of the Policy on Service’s principle of client centricity, an interaction point is e-enabled (“online”) if the user is able to pass through the interaction point without having to go out-of-band.\n\nNote: For more information on client interaction points, consult the Guideline on Service Management.\n"
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
           "datastore_type": "text",
           "choices": {
             "N": {
@@ -692,11 +687,6 @@
             "fr": "Indique si un service est de nature électronique selon les principaux points d’interaction avec les clients et leur application à ce service en particulier.\n\nRemarque : Pour en savoir plus sur chaque point d’interaction, consultez la Ligne directrice sur la gestion des services.\n",
             "en": "Identifies whether a service is e-enabled based on key client interaction points, as applicable to the specific service. In the spirit of the Policy on Service’s principle of client centricity, an interaction point is e-enabled (“online”) if the user is able to pass through the interaction point without having to go out-of-band.\n\nNote: For more information on client interaction points, consult the Guideline on Service Management.\n"
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
           "datastore_type": "text",
           "choices": {
             "N": {
@@ -723,11 +713,6 @@
             "fr": "Indique si un service est de nature électronique selon les principaux points d’interaction avec les clients et leur application à ce service en particulier.\n\nRemarque : Pour en savoir plus sur chaque point d’interaction, consultez la Ligne directrice sur la gestion des services.\n",
             "en": "Identifies whether a service is e-enabled based on key client interaction points, as applicable to the specific service. In the spirit of the Policy on Service’s principle of client centricity, an interaction point is e-enabled (“online”) if the user is able to pass through the interaction point without having to go out-of-band.\n\nNote: For more information on client interaction points, consult the Guideline on Service Management.\n"
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
           "datastore_type": "text",
           "choices": {
             "N": {
@@ -754,11 +739,6 @@
             "fr": "Indique si un service est de nature électronique selon les principaux points d’interaction avec les clients et leur application à ce service en particulier.\n\nRemarque : Pour en savoir plus sur chaque point d’interaction, consultez la Ligne directrice sur la gestion des services.\n",
             "en": "Identifies whether a service is e-enabled based on key client interaction points, as applicable to the specific service. In the spirit of the Policy on Service’s principle of client centricity, an interaction point is e-enabled (“online”) if the user is able to pass through the interaction point without having to go out-of-band.\n\nNote: For more information on client interaction points, consult the Guideline on Service Management.\n"
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
           "datastore_type": "text",
           "choices": {
             "N": {
@@ -785,11 +765,6 @@
             "fr": "Indique si un service est de nature électronique selon les principaux points d’interaction avec les clients et leur application à ce service en particulier.\n\nRemarque : Pour en savoir plus sur chaque point d’interaction, consultez la Ligne directrice sur la gestion des services.\n",
             "en": "Identifies whether a service is e-enabled based on key client interaction points, as applicable to the specific service. In the spirit of the Policy on Service’s principle of client centricity, an interaction point is e-enabled (“online”) if the user is able to pass through the interaction point without having to go out-of-band.\n\nNote: For more information on client interaction points, consult the Guideline on Service Management.\n"
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
           "datastore_type": "text",
           "choices": {
             "N": {
@@ -816,11 +791,6 @@
             "fr": "Indique si un service est de nature électronique selon les principaux points d’interaction avec les clients et leur application à ce service en particulier.\n\nRemarque : Pour en savoir plus sur chaque point d’interaction, consultez la Ligne directrice sur la gestion des services.\n",
             "en": "Identifies whether a service is e-enabled based on key client interaction points, as applicable to the specific service. In the spirit of the Policy on Service’s principle of client centricity, an interaction point is e-enabled (“online”) if the user is able to pass through the interaction point without having to go out-of-band.\n\nNote: For more information on client interaction points, consult the Guideline on Service Management.\n"
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
           "datastore_type": "text",
           "choices": {
             "N": {
@@ -847,36 +817,39 @@
             "fr": "Détermine quels canaux, s’il y a lieu, offrent aux utilisateurs d’un service l’occasion de donner une rétroaction sur leur niveau de satisfaction à l’égard du service.",
             "en": "Identifies which channels, if any, provide users of a service an opportunity to provide feedback on their level of satisfaction with the service. Select all that apply."
           },
-          "obligation": "optional",
-          "datastore_type": "_text",
+          "datastore_type": "text",
           "choices": {
-            "EML": {
+            "eml": {
               "fr": "Courriel",
               "en": "Email"
             },
-            "FAX": {
+            "fax": {
               "fr": "Télécopieur",
               "en": "Fax"
             },
-            "IP": {
+            "person": {
               "fr": "En personne",
               "en": "In-Person"
             },
-            "NONE": {
+            "non": {
               "fr": "Aucune des réponses",
               "en": "None"
             },
-            "ONL": {
+            "onl": {
               "fr": "En ligne",
               "en": "Online"
             },
-            "POST": {
+            "post": {
               "fr": "Courrier postal",
               "en": "Postal Mail"
             },
-            "TEL": {
+            "tel": {
               "fr": "Téléphone",
               "en": "Telephone"
+            },
+            "oth":{
+              "en": "Other",
+              "fr": "Autre"
             }
           }
         },
@@ -918,35 +891,9 @@
           },
           "obligation": "optional",
           "datastore_type": "text"
-        },
-        {
-          "id": "harmonized_service_name_en",
-          "label": {
-            "fr": "nom_du_service_harmonisé (anglais)",
-            "en": "Harmonized Service Name (english)"
-          },
-          "description": {
-            "fr": "Une nouvelle colonne avec un nom de service édité a été créée pour fournir des noms de service cohérents pour les deux années; par défaut en utilisant leur nom le plus récent. Cela était nécessaire car une minorité de services a changeé de nom légèrement d'une année à l'autre.",
-            "en": "A new column with an edited service name was created to provide consistent service names over both years; by default using their newest name. This was necessary because a minority of services changed names slightly year over year."
-          },
-          "obligation": "optional",
-          "datastore_type": "text"
-        },
-        {
-          "id": "harmonized_service_name_fr",
-          "label": {
-            "fr": "nom_du_service_harmonisé (français)",
-            "en": "Harmonized Service Name (french)"
-          },
-          "description": {
-            "fr": "Une nouvelle colonne avec un nom de service édité a été créée pour fournir des noms de service cohérents pour les deux années; par défaut en utilisant leur nom le plus récent. Cela était nécessaire car une minorité de services a changeé de nom légèrement d'une année à l'autre.",
-            "en": "A new column with an edited service name was created to provide consistent service names over both years; by default using their newest name. This was necessary because a minority of services changed names slightly year over year."
-          },
-          "obligation": "optional",
-          "datastore_type": "text"
         }
       ],
-      "example_record": {
+      #"example_record": {
         "fiscal_yr": "2017-2018",
         "service_id": "4",
         "service_name_en": "Partner views",
@@ -1002,7 +949,6 @@
       },
       "primary_key": [
         "fiscal_yr",
-        "service_id",
         "service_std_id"
       ],
       "fields": [
@@ -1016,11 +962,6 @@
             "fr": "Indique l’exercice pour lequel les données sur les services sont déclarées.",
             "en": "Identifies the fiscal year for which service data is reported"
           },
-          "validation": {
-            "en": "This field must not be empty",
-            "fr": "Cette zone ne doit pas être vide"
-          },
-          "obligation": "mandatory",
           "datastore_type": "text",
           "choices": {
             "2013-2014": "2013-2014",
@@ -1028,7 +969,10 @@
             "2015-2016": "2015-2016",
             "2016-2017": "2016-2017",
             "2017-2018": "2017-2018",
-            "2018-2019": "2018-2019"
+            "2018-2019": "2018-2019",
+            "2019-2020": "2019-2020",
+            "2020-2021": "2020-2021",
+            "2021-2022": "2021-2022"
           }
         },
         {
@@ -1038,7 +982,7 @@
             "en": "Service ID Number"
           },
           "description": {
-            "fr": "Le numéro unique attribué par le ministère ou l’organisme à un service dans le répertoire afin de faciliter le référencement à des services précis. (p. ex. 1, 2, etc.)",
+            "fr": "Le numéro unique attribué par le ministère ou l’organisme à un service dans le répertoire afin de faciliter le référencement à des services précis.",
             "en": "The unique number assigned by the department to a service in the inventory to make it easier to refer to specific services."
           },
           "validation": {
@@ -1203,7 +1147,10 @@
             "2015-2016": "2015-2016",
             "2016-2017": "2016-2017",
             "2017-2018": "2017-2018",
-            "2018-2019": "2018-2019"
+            "2018-2019": "2018-2019",
+            "2019-2020": "2019-2020",
+            "2020-2021": "2020-2021",
+            "2021-2022": "2021-2022"
           }
         },
         {
