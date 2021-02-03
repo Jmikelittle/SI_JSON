@@ -1311,30 +1311,37 @@
         }
       ],
       "example_record": {
-        "fiscal_yr": "2017-2018",
-        "service_id": "4",
-        "service_std_id": "7",
-        "service_std_en": "Process applications and notify participants of results within 45 days.",
-        "service_std_fr": "Traiter les demandes et communiquer les résultats aux participants dans un délai de 45 jours.",
-        "service_std_url_en": "http://www.agr.gc.ca/eng/about-us/planning-and-reporting/service-standards-at-agriculture-and-agri-food-canada/agriculture-and-agri-food-canada-service-standards-quarterly-results-fiscal-year-2017-2018/?id=1481057048109",
-        "service_std_url_fr": "http://www.agr.gc.ca/fra/a-propos-de-nous/planification-et-rapports/normes-de-service-d-agriculture-et-agroalimentaire-canada/normes-de-service-d-agriculture-et-agroalimentaire-canada-resultats-trimestriels-exercice-2017-2018/?id=1481057048109",
+        "fiscal_yr": "2019-2020",
+        "service_id": "1003",
+        "service_name_en": "Employment Insurance (EI) Benefits",
+        "service_name_fr": "Prestations d’assurance-emploi",
+        "service_std_id": "931",
+        "service_std_en": "Applicants receive an EI benefit payment or are notified that they are not eligible for benefits within 28 calendar days of applying",
+        "service_std_fr": "Les demandeurs reçoivent leurs premières prestations d’assurance-emploi ou un avis de non-admissibilité aux dites prestations dans un délai de 28 jours civils.",
+        "service_std_url_en": "",
+        "service_std_url_fr": "",
         "service_std_type": [
-          "TML",
-          "ACS"
+          "time"
         ],
-        "service_std_target": "0.95",
-        "gcss_tool_fiscal_yr": "2016-2017",
+        "target_type" : [
+          "percentage"
+        ],
+        "service_std_target": "80",
+        "volume_meeting_target": "2142993",
+        "total_volumn": "2680195",
+        "performance": "79.9566076348922",
+        "gcss_tool_fiscal_yr": "2018-2019",
+        "channel": [
+          "oth"
+        ],
+        "standard_channel_comment_en": "Mail, Online",
+        "standard_channel_comment_fr": "Par la poste, Numérique",
+        "standard_comment_en": "A significant portion of applications were received within the last 2 weeks of FY 2019-2020.",
+        "standard_comment_fr": "Une grande partie des demandes a été reçue au cours des deux dernières semaines de l’exercice financier 2019-2020.",
         "realtime_result_url_en": "ND",
         "realtime_result_url_fr": "ND",
-        "q1_performance_result": "ND",
-        "q1_business_volume": "ND",
-        "q2_performance_result": 865,
-        "q2_business_volume": 1000,
-        "q3_performance_result": 808,
-        "q3_business_volume": 1200,
-        "q4_performance_result": 865,
-        "q4_business_volume": 1100,
-        "harmonized_service_id": "aafc-aac-01"
+        "department_name_en" : "Employment and Social Development Canada",
+        "department_name_fr" : "Emploi et Développement social Canada"
       }
     }
   ]
